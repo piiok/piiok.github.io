@@ -14,8 +14,8 @@
 	line-height: 0;
 	animation: rotate-loader 5s infinite;
 	padding: 25px;
-	border: 1px solid #67b93e;
-  border-radius: 50%;
+	/* border: 1px solid #67b93e; */
+  /* border-radius: 50%; */
   position:fixed; 
   right: calc(50% - 75px); top: calc(50% - 115px);
 }
@@ -26,10 +26,10 @@
 	height: 50%;
 }
 .loader .loading {
-	position: absolute;
+  position: absolute;
+  background: #4caf50;
 	background: url("../../images/LogoUIS.png") no-repeat fixed center;
 	background-size: 80px 100px;
-	/* background: #4caf50; */
 }
 
 .loader .one {
