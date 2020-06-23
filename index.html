@@ -132,7 +132,7 @@
 				</div><!-- p-item -->
 
 				<div class="p-item gesture-control">
-					<a class="img" href="images/gesture-control.gif" data-fluidbox>
+					<a class="img" href="images/gesture-control-min.gif" data-fluidbox>
 						<img src="images/pre-gesture-control.jpg" alt=""></a>
 				</div><!-- p-item -->
 
@@ -147,12 +147,12 @@
 				</div><!-- p-item -->
 
 				<div class="p-item arduino">
-					<a href="images/smart-trash.gif" data-fluidbox>
+					<a href="images/smart-trash-min.gif" data-fluidbox>
 						<img src="images/pre-smart-trash.jpeg" alt=""></a>
 				</div><!-- p-item -->
 				
 				<div class="p-item gesture-control">
-					<a class="img" href="images/gesture-control-2.gif" data-fluidbox>
+					<a class="img" href="images/gesture-control-2-min.gif" data-fluidbox>
 						<img src="images/pre-gesture-control-2.jpeg" alt=""></a>
 				</div><!-- p-item -->
 				
@@ -399,11 +399,24 @@
 	<script src="common-js/scripts.js"></script>
 	
 	<script>
+		function precargaGif(){
+			var img1 = new Image();
+			img1.src = 'images/gesture-control-min.gif';
+
+			var img2 = new Image();
+			img2.src = 'images/smart-trash-min.gif';
+
+			var img3 = new Image();
+			img3.src = 'images/gesture-control-2-min.gif';
+
+			var img3 = new Image();
+			img3.src = 'images/smart-trash-wifi.gif';
+
+			$('#preload').fadeOut("slow");
+			$('#body').css({ visibility: 'visible' });
+		}
 		$(document).ready(function() {
-			setTimeout(function() {
-				$('#preload').fadeOut("slow");
-				$('#body').css({ visibility: 'visible' });
-			},200);
+			window.addEventListener('load',precargaGif)
 		});
 	</script>
 
