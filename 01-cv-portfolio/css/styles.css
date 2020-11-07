@@ -392,9 +392,23 @@ header .downlad-btn:hover {
 }
 
 .portfolio-section .p-item {
+  position: relative;
   width: 33.333%;
   padding: 0 7.5px 0px;
   margin-top: 15px;
+}
+
+.portfolio-section .p-item > .ver-mas {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 991;
+}
+.portfolio-section .p-item > .ver-mas > .badge {
+  background-color: rgb(255, 171, 0);
+}
+.portfolio-section .p-item > .ver-mas > .badge:hover {
+  background-color: rgb(216, 146, 6);
 }
 
 .portfolio-section .p-item a {
