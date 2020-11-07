@@ -1,0 +1,20 @@
+{
+  // Format via eslint and prettier
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.trace.server": "messages",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  // "eslint.packageManager": "yarn",
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "files.eol": "\r\n"
+}
