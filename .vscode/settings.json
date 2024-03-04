@@ -3,7 +3,9 @@
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
   "eslint.trace.server": "messages",
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   // "eslint.packageManager": "yarn",
   // turn it off for JS and JSX, we will do this via eslint
   "[javascript]": {
